@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Khand :wght@300 & display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Patrick+Hand&display=swap');
 
+h1{
+  font-size: 30pt;
+  font-family: 'Shadows Into Light';
+  box-shadow: 10px 10px 10px rgb(2, 4, 26);
+  padding: 0px 200px 10px 200px;
+  border-radius: 10px;
+}
 
 :root {
     --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
@@ -15,6 +24,7 @@
     --peso: 300;
   }
 body{
+    font-family: 'Khand', sans-serif;
     background: var(--fundo);
     display: flex;
     flex-direction: column;
@@ -24,31 +34,34 @@ body{
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    width: 80%;
-    min-height: 500px;
-    height: 80%;
-    box-shadow: 0px 0px 14px -3px black;
-    border-radius: 15px;
-    color: white;
+  font-family: 'Khand', sans-serif;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 80%;
+  min-height: 500px;
+  height: 80%;
+  box-shadow: 0px 0px 14px -3px black;
+  border-radius: 15px;
+  color: white;
 }
 
 #gerar{
   width: 150px;
   height: 30px;
   border-radius: 30px;
-  background-color: #18b71b;
+  background-color: #2ba72e;
 }
 
 #gerar:hover{
   width: 190px;
   height: 40px;
   border-radius: 30px;
-  background-color: #057007;
+  background-color: #18b71b ;
   font-size: larger;
   box-shadow: 10px 10px 10px#18b71b;
 }
