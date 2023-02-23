@@ -14,18 +14,60 @@
 body{
     background: var(--fundo);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 50px;
-    width: 800px;
+    width: 80%;
     min-height: 500px;
-    height: auto;
+    height: 80%;
     box-shadow: 0px 0px 14px -3px black;
     border-radius: 15px;
+    color: white;
 }
+
+#gerar{
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #18b71b;
+}
+
+#gerar:hover{
+  width: 190px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #057007;
+  font-size: larger;
+  box-shadow: 10px 10px 10px#18b71b;
+}
+
+.styletext{
+  width: 400px;
+  height: 500px;
+  resize: none;
+  
+}
+#textareaCode{
+  margin-right: 15px;
+  
+}
+
+
+
+#caixa{
+
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: center;
+}
+
