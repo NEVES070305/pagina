@@ -1,16 +1,19 @@
 
-//copiei o codigo do outro grupo, para termos uma base apenas//
+var btn = document.getElementById('btn')
+btn.addEventListener('click',inserir)
 
-const html = document.querySelector("html");
-const body = document.querySelector("body");
-var data = new Date();
-var horas = data.getHours();
+function inserir(){
+  
+    let p1 = document.getElementById('page1')
+    let p2 = document.getElementById('page2')
 
-console.log(horas);
+    p1.style.display = "none"
+    p2.style.display = "flex"
 
-window.addEventListener("load", function () {
-  if (horas < 18) {
-    html.classList.toggle("white-mode");
-    body.classList.toggle("white-mode");
-  }
-});
+    
+    let codeHtml = document.getElementById('codeHtml').value
+    p2.innerHTML = codeHtml
+
+    
+    let codeJs = document.getElementById('codeJs').value
+    document.getElementById('jsUser').innerHTML = codeJs
