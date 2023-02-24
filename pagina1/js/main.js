@@ -1,6 +1,3 @@
-
-//copiei o codigo do outro grupo, para termos uma base apenas//
-
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 var data = new Date();
@@ -14,3 +11,39 @@ window.addEventListener("load", function () {
     body.classList.toggle("white-mode");
   }
 });
+
+
+
+var text1 = document.getElementById('textareaCode').value
+var text2 = document.getElementById('textareaJS').value
+var bt1 = document.getElementById('gerar')
+var bt2 = document.getElementById('voltar')
+var div1 = document.getElementById('caixa')
+var div2 = document.getElementById('prog')
+
+bt1.addEventListener("click", traduzir)
+bt2.addEventListener("click", voltar)
+
+
+function traduzir(){
+  var text1 = document.getElementById('textareaCode').value
+  var text2 = document.getElementById('textareaJS').value
+  document.getElementById('prog').innerHTML = text1
+  document.getElementById('jsUser').innerHTML = text2
+  div1.style.display='none'
+  div2.style.display='block'
+  bt1.style.display='none'
+  bt2.style.display='block'
+
+}
+
+function voltar(){
+  div1.style.display='flex'
+  div2.style.display='none'
+  bt1.style.display='flex'
+  bt2.style.display='none'
+  div1.style.flexDirection='row'
+  bt1.style.justifyContent='center'
+  bt1.style.alignItems='center'
+
+}

@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
 </head>
-
-<body>
+<body> 
     <header>
         <h1>Estilizador e gerador de página.</h1>
     </header>
     <main>
-
+        <div id="prog">
+        </div>
         <div id="caixa">
             <section class="area" id="areahtml">
                 <p><label for="textareaCode">Insira o seu HTML.</label></p>
-                
+
                 <!--<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false" "></textarea>-->
                 <textarea id="textareaCode" class="styletext" name="textareaCode"></textarea>
             </section>
@@ -29,11 +29,13 @@
                     spellcheck="false"></textarea>
             </section>
         </div>
-        
-        <a class="button" href="file:///C:/Users/Am%C3%A1bile%20Silva/Documents/Front-For-JSex/index.html" ><input type="button" value="Gerar página." id="gerar"></a></div>
-        
-    
+        <p style="font-size: 19px;">*Obs: Colocar somente o HTML a partir do main, tag's anteriores já adicionadas automáticamente </p>
+        <input type="button" value="Gerar página" id="gerar">
+        <input type="button" value="Voltar" id="voltar">
+
+
     </main>
+    <script id="jsUser"></script>
     <script src="./js/main.js"></script>
 </body>
 

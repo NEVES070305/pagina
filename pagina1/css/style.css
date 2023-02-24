@@ -54,7 +54,7 @@ main {
   border-color: rgb(60, 58, 58);
 }
 
-#gerar{
+input{
   width: 230px;
   height: 50px;
   border-radius: 30px;
@@ -63,7 +63,7 @@ main {
   transition: 10ms;
 }
 
-#gerar:hover{
+input:hover{
   transition: 10ms;
   border-radius: 30px;
   -webkit-transform: scale(1.1); 
@@ -82,6 +82,9 @@ main {
   margin-right: 15px;
 }
 
+#voltar{
+  display: none;
+}
 
 
 #caixa{
