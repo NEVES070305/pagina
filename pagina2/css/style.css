@@ -1,1 +1,68 @@
-a
+/*Adição da fonte Montserrat ao programa */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+
+/* Zerando o padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--peso);
+}
+:root {
+  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
+  --texto: white;
+  --botao: linear-gradient(
+    257.91deg,
+    #c366ff 17.54%,
+    #d37fc8 54.55%,
+    #e95582 72.93%
+  );
+  --botaoTxt: white;
+  --input-fundo: white;
+  --peso: 300;
+}
+
+.white-mode:root {
+  --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
+  --texto: rgb(0, 0, 0);
+  --botao: linear-gradient(
+    260.02deg,
+    #a6c3e4 -4.36%,
+    #3f87dd -4.35%,
+    #7db1ef 45.09%,
+    #86bcfc 59.75%
+  );
+  --botaoTxt: rgb(3, 3, 3);
+  --input-fundo: white;
+  --peso: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--fundo);
+  color: var(--texto);
+  
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  width: 800px;
+  min-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 14px -3px black;
+  border-radius: 15px;
+}
+input {
+  text-align: center;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 200px;
+}

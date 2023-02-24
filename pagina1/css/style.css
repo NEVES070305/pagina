@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family= Khand :wght@300 & display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Patrick+Hand&display=swap');
 
 h1{
   font-size: 30pt;
   font-family: 'Shadows Into Light';
   box-shadow: 10px 10px 10px rgb(2, 4, 26);
   padding: 0px 200px 10px 200px;
+  border-style:outset;
+  border-color: rgb(60, 58, 58);
   border-radius: 10px;
 }
 
@@ -44,26 +46,30 @@ main {
   padding: 50px;
   width: 80%;
   min-height: 500px;
-  height: 80%;
-  box-shadow: 0px 0px 14px -3px black;
+  height: 100%;
+  box-shadow: 5px 5px 14px -3px black;
   border-radius: 15px;
   color: white;
+  border-style:outset;
+  border-color: rgb(60, 58, 58);
 }
 
 #gerar{
-  width: 150px;
-  height: 30px;
+  width: 230px;
+  height: 50px;
   border-radius: 30px;
-  background-color: #2ba72e;
+  background-color: #2D888F;
+  font-size: 24px;
+  transition: 10ms;
 }
 
 #gerar:hover{
-  width: 190px;
-  height: 40px;
+  transition: 10ms;
   border-radius: 30px;
-  background-color: #18b71b ;
-  font-size: larger;
-  box-shadow: 10px 10px 10px#18b71b;
+  -webkit-transform: scale(1.1); 
+  -ms-transform: scale(1.1); 
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 10px rgb(0, 100, 131);
 }
 
 .styletext{
@@ -74,7 +80,6 @@ main {
 }
 #textareaCode{
   margin-right: 15px;
-  
 }
 
 
