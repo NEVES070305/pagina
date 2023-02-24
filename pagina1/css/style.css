@@ -53,8 +53,11 @@ main {
   border-style:outset;
   border-color: rgb(60, 58, 58);
 }
+#prog{
+  display: none;
+}
 
-input{
+#gerar{
   width: 230px;
   height: 50px;
   border-radius: 30px;
@@ -63,7 +66,16 @@ input{
   transition: 10ms;
 }
 
-input:hover{
+#voltar{
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #2D888F;
+  font-size: 24px;
+  transition: 10ms;
+}
+
+#gerar:hover{
   transition: 10ms;
   border-radius: 30px;
   -webkit-transform: scale(1.1); 
@@ -71,6 +83,15 @@ input:hover{
   transform: scale(1.1); 
   box-shadow: 5px 5px 10px rgb(0, 100, 131);
 }
+#voltar:hover{
+  transition: 10ms;
+  border-radius: 30px;
+  -webkit-transform: scale(1.1); 
+  -ms-transform: scale(1.1); 
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 10px rgb(0, 100, 131);
+}
+
 
 .styletext{
   width: 400px;
@@ -95,3 +116,32 @@ text-align: center;
 justify-content: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 37, 41);
+  box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 100, 131); 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #2D888F; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 100, 131); }

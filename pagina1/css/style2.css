@@ -40,6 +40,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--fundo);
@@ -49,28 +50,25 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 50px;
-  width: 800px;
+  width: 90%;
   min-height: 500px;
   height: auto;
   box-shadow: 0px 0px 14px -3px black;
   border-radius: 15px;
 }
-input {
-  text-align: center;
-  font-size: 1.3rem;
+
+.area{
+  display: none;
+}
+#gerar{
+  display: none;
+}
+#voltar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 700px;
-  height: 200px;
 }
-p {
-  word-break: normal;
-  text-align: justify;
-  font-size: 18px;
-  line-height: 25px;
-}
+
 
 input {
   background: var(--input-fundo);
@@ -78,4 +76,91 @@ input {
   width: 100px;
   height: 40px;
   border-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+
+#voltar{
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #2D888F;
+  font-size: 24px;
+  transition: 10ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#voltar:hover{
+  transition: 10ms;
+  border-radius: 30px;
+  -webkit-transform: scale(1.1); 
+  -ms-transform: scale(1.1); 
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 10px rgb(0, 100, 131);
+}
+
+#result {
+  padding: 10px;
+  background-color: var(--input-fundo);
+  color: black;
+  border-radius: 12px;
+  width: auto;
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+  min-height: 40px;
+  word-break: break-all;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnCalcular {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  background: var(--botao);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: 5%;
+  transition: 0.2s;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#btnCalcular:hover {
+  transform: scale(110%);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 100, 131); 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #2D888F; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 100, 131); }

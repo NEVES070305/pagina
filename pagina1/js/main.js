@@ -29,23 +29,16 @@ function traduzir(){
   var obs = document.getElementById('obs')
   var text1 = document.getElementById('textareaCode').value
   var text2 = document.getElementById('textareaJS').value
+  document.getElementById('link').setAttribute("href", "./css/style2.css")
   document.getElementById('prog').innerHTML = text1
   document.getElementById('jsUser').innerHTML = text2
-  div1.style.display='none'
-  div2.style.display='block'
-  bt1.style.display='none'
-  bt2.style.display='block'
+ 
   obs.style.display='none'
 }
 
 function voltar(){
-  div1.style.display='flex'
-  div2.style.display='none'
-  bt1.style.display='flex'
-  bt2.style.display='none'
-  div1.style.flexDirection='row'
-  bt1.style.justifyContent='center'
-  bt1.style.alignItems='center'
+  document.getElementById('link').setAttribute("href", "./css/style.css")
+ 
   obs.style.display='flex'
 
 }
