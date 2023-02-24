@@ -3,8 +3,7 @@ const body = document.querySelector("body");
 var data = new Date();
 var horas = data.getHours();
 
-    p1.style.display = "none"
-    p2.style.display = "flex"
+console.log(horas);
 
 window.addEventListener("load", function () {
   if (horas < 18) {
@@ -27,6 +26,7 @@ bt2.addEventListener("click", voltar)
 
 
 function traduzir(){
+  var obs = document.getElementById('obs')
   var text1 = document.getElementById('textareaCode').value
   var text2 = document.getElementById('textareaJS').value
   document.getElementById('prog').innerHTML = text1
@@ -35,7 +35,7 @@ function traduzir(){
   div2.style.display='block'
   bt1.style.display='none'
   bt2.style.display='block'
-
+  obs.style.display='none'
 }
 
 function voltar(){
@@ -46,5 +46,6 @@ function voltar(){
   div1.style.flexDirection='row'
   bt1.style.justifyContent='center'
   bt1.style.alignItems='center'
+  obs.style.display='flex'
 
 }
