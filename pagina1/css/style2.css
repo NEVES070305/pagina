@@ -38,6 +38,8 @@
   --peso: 500;
 }
 
+
+
 body {
   display: flex;
   flex-direction: column;
